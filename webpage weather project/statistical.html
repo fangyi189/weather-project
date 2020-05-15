@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+         body {
+          background: url("./assets/img/sg1.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+         } 
+        
+                
+        .container .content {
+          position: left ;
+          background: rgb(0, 0, 0); /* Fallback color */
+          background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+          color: #f1f1f1;
+          width: 47%;
+          padding: 20px;
+        }
+
+        .brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .5;
+}.brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .5;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.div2 {
+  width: 1380px;
+  height: 680px;  
+  padding: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+}
+.div3 {
+  width: 1200px;
+  height: 50px;  
+  margin-top:75px;
+  border: 1px solid  rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+  color: #ffffe6;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
+}
+.div4 {
+  width: 1200px;
+  height: 95px;  
+  margin-top:20px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+  color: #fff;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+}
+
+.div5 {
+  width: 1200px;
+  height: 215px;  
+  margin-top:20px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+  color: #fff;
+  background: rgb(0, 0, 0); /* Fallback color */
+   background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+}
+
+.img2 {
+  float: left;
+
+  padding: 10px;
+  margin-right: 10px;  
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+  margin-top: 20px;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+  margin-top: 20px;
+}
+
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+  margin-top: 20px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+      </style>
+        
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Analysing Weather Pattern System">
+        <title>Analysing Weather Pattern System</title>
+    </head>
+
+    <body>
+      
+        <div class="container">
+            <header class="header">
+                
+                <div class="topnav"> 
+                    <a  href="index.html">Home</a>
+                    <a class="active" href="statistical.html">Statistical</a>
+                    <a  href="News.html">News</a>
+                    <a href="howto.html">How-To</a>
+                    <a href="Notification.html">Notification</a>
+                  </div>   
+            
+                
+            </header>
+            
+           
+
+
+
+
+            <main class="main">
+              <div class="div2">
+                
+                
+                <div class="div3">
+  
+                  <h1>Overview of Statistical</h1>
+                  
+                </div>
+                <hr align="left" width="87%">
+                <div class="div4">
+  
+                  <div style="overflow-x:auto;">
+                    <table class="s1">
+                        <tr class="s1">
+                            <th class="s1"> <p onclick="myFunction()" style="font-size:26px;" align="center">Temperature<p></th>
+                            <th class="s1">  <p onclick="myFunction2()" style="font-size:26px;" align="center">Air Pollution<p></th>
+                              <th class="s1"> <p onclick="myFunction3()" style="font-size:26px;" align="center">Global Warming <p></th>
+                          </tr>
+                     
+                    </table>
+                      </div>
+
+                <div class="div5">
+                  
+                  <div id="myDIV" style="display:none">
+                   
+                    <div class="row">
+                      <div class="column">
+                        <img  src="./assets/img/tampano.JPG" alt="Css CastShow"/>
+                      </div>
+                      <div class="column">
+                        <img  src="./assets/img/tamp1.JPG" alt="Css CastShow"/>
+                        
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="column">
+                        <img  src="./assets/img/tamp2.JPG" alt="Css CastShow"/>
+                        
+                      </div>
+                      <div class="column">
+                        <img  src="./assets/img/tempchange.JPG" alt="Css CastShow"/>
+                      </div>
+                    </div>
+                    
+                    
+                    </div>
+
+                    <div id="myDIV2" style="display:none">
+
+                      <div class="row">
+                        <div class="column">
+                          <img  src="./assets/img/ap3.JPG" alt="Css CastShow"/>
+                        </div>
+                        <div class="column">
+                          <img  src="./assets/img/ap1.JPG" alt="Css CastShow"/>
+                          
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="column">
+                          <img  src="./assets/img/ap2.JPG" alt="Css CastShow"/>
+                          
+                        </div>
+                        </div>
+                      
+                    </div>
+
+                    <div id="myDIV3" style="display:none">
+                      <div class="row">
+                        <div class="column">
+                          <img  src="./assets/img/gw1.JPG" alt="Css CastShow"/>
+                        </div>
+                        <div class="column">
+                          <img  src="./assets/img/gw2.JPG" alt="Css CastShow"/>
+                          
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="column">
+                          <img  src="./assets/img/gw3.JPG" alt="Css CastShow"/>
+                          
+                        </div>
+                        <div class="column">
+                          <img  src="./assets/img/gw4.JPG" alt="Css CastShow"/>
+                        </div>
+                      </div>
+                    
+                    
+                    
+                      </div>
+                 
+                     
+                   
+                   
+                </div>
+
+                   
+          
+          
+
+                </div>  
+
+                
+            
+            </main>
+        
+        </div>
+       
+    </body>
+    <script src="./assets/js/script.js"></script>
+</html>
