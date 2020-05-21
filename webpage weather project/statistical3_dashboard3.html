@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+         body {
+		  background-color: #333333;
+       /*   background: url("./assets/img/sg1.jpg") no-repeat center center fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+         } 
+        
+                
+        .container .content {
+          position: left ;
+          background: rgb(0, 0, 0); /* Fallback color */
+          background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+          color: #f1f1f1;
+          width: 47%;
+          padding: 20px;
+        }
+
+        .brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.inline-block {
+   display: inline-block;
+}
+.brightness img:hover {
+    opacity: .5;
+}.brightness {
+    background-color: white;
+    display: inline-block;
+
+}
+.brightness img:hover {
+    opacity: .5;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.div2 {
+  width: 1380px;
+  height: 680px;  
+  padding: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+}
+.div3 {
+  width: 1200px;
+  height: 10%;  
+  margin-top:75px;
+  border: 1px solid  rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+  color: #ffffe6;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
+}
+.div4 {
+  width: 1200px; 
+  margin-top:20px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+  color: #fff;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+}
+
+.div5 {
+  width: 1200px;
+  height: 215px;  
+  margin-top:20px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  box-sizing: border-box;
+  color: #fff;
+  background: rgb(0, 0, 0); /* Fallback color */
+   background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+}
+
+.img2 {
+  float: left;
+
+  padding: 10px;
+  margin-right: 10px;  
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+  margin-top: 20px;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+  margin-top: 20px;
+}
+
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(211, 211, 211); /* Fallback color */
+   background: rgba(37, 37, 37, 0.5); /* Black background with 0.5 opacity */
+  margin-top: 20px;
+}
+
+.column {
+
+ display: inline-block;
+  float: left;
+ /* width: 50%;
+  padding: 5px; */
+  width: 30%;
+  height: 333.125px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+ /* padding: 6px 12px;
+  border: 1px solid #ccc; */
+  border-top: none;
+  height: 0;
+}
+      </style>
+        
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Analysing Weather Pattern System">
+        <title>Analysing Weather Pattern System</title>
+		<script>
+		function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	</script>
+    </head>
+
+    <body>
+      
+        <div class="container">
+            <header class="header">
+                
+                <div class="topnav"> 
+                    <a  href="index.html">Home</a>
+                    <a class="active" href="statistical.html">Statistical</a>
+                    <a  href="News.html">News</a>
+                    <a href="howto.html">How-To</a>
+                    <a href="Notification.html">Notification</a>
+                  </div>   
+            
+                
+            </header>
+            
+           
+
+
+
+
+            <main class="main">
+			<p><a href="statistical.html" style="
+				position: relative;">Go back</a></p>
+				<div class='tableauPlaceholder' id='viz1590001778475' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Em&#47;Emissions_15733987555610&#47;Tableaudebord1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Emissions_15733987555610&#47;Tableaudebord1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Em&#47;Emissions_15733987555610&#47;Tableaudebord1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590001778475');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='3377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </main>
+        
+        </div>
+       
+    </body>
+    <script src="./assets/js/script.js"></script>
+</html>
