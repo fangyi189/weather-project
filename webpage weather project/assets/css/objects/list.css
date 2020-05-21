@@ -1,0 +1,50 @@
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.list__item {
+    padding-left: 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.list__item__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 27px; 
+}
+
+.list__item__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 27px;
+    border-radius: 50%;
+}
+
+.list__item__text {
+    width: 117px;
+    margin-right: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /*color: #212121;*/
+    color: #ffffe6;
+    font-weight: 400;
+}
+
+/* Change the background color on mouse-over */
+.list__item:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+  .list__item__img1 {
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+}

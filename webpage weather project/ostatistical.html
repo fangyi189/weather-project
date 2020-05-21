@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+         body {
+         background-image: url("./assets/img/bmt.jfif");
+         } 
+        
+                
+        .container .content {
+          position: left ;
+          background: rgb(0, 0, 0); /* Fallback color */
+          background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+          color: #f1f1f1;
+          width: 44%;
+          padding: 40px;
+        }
+        #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+   
+        </style>
+        
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Analysing Weather Pattern System">
+        <title>Analysing Weather Pattern System</title>
+    </head>
+
+    <body>
+      
+        <div class="container">
+            <header class="header">
+             
+                
+                <div class="topnav"> 
+                  <a  href="index.html">Home</a>
+                  <a class="active" href="statistical.html">Statistical</a>
+                  <a  href="News.html">News</a>
+                  <a href="Visibility.html">How-To</a>
+                  <a href="Percipitation.html">Notification</a>
+                </div>   
+             
+            
+                
+            </header>
+            
+            <div class="sidenav">
+              <h2 class="section-list__title">Country</h2>
+               <a href="#about">Singapore</a>
+               <a href="#services">Tokyo</a>
+               <a href="#clients">Paris</a>
+               <a href="#contact">Los Angeles</a>
+               <a href="#services">Chicago</a>
+               <a href="#clients">Houston</a>
+               <a href="#contact">Philadelphia</a>
+               <a href="#clients">San Francisco</a>
+               <a href="#contact">Mexico City</a>
+             </div>
+            <main class="main">
+                <div class="content">
+                    
+                
+
+                    <map name="planetmap">
+                        <area target="" alt="2" title="2" href="" coords="174,196,22" shape="circle">
+                        <area target="" alt="3" title="3" href="" coords="318,231,26" shape="circle">
+                        <area target="" alt="6" title="6" href="" coords="486,175,24" shape="circle">
+                        <area target="" alt="5" title="5" href="" coords="368,136,22" shape="circle">
+                        <area  target="" alt="4" title="North" href="" coords="283,61,21" shape="circle">
+                        <area target="" alt="1" title="1" href="" coords="117,137,23" shape="circle">
+                      </map>
+                      
+
+                  
+                    <h1>Statistical</h1>
+                    <p>Overview of all the Stats</p>
+                    <div style="overflow-x:auto;">
+                        <table class="s1">
+                            <tr class="s1">
+                                <th class="s1"> <p onclick="myFunction()">Temperature<p></th>
+                                <th class="s1">  <p onclick="myFunction2()">Air Pollution<p></th>
+                                
+                              </tr>
+                          <tr class="s1">
+                            <th class="s1"><img class="list__item__img" src="./assets/img/rainy.png" alt="Css CastShow"/></th>
+                            <th class="s1"><img class="list__item__img" src="./assets/img/rainy.png" alt="Css CastShow"/></th>
+                           
+                          </tr>
+                         
+                        </table>
+                       
+                    
+                          <div id="myDIV" style="display:none">
+                          Graph1
+                          </div>
+                          <div id="myDIV2" style="display:none">
+                          Graph 2
+                          </div>
+                      </div>
+                      <p id="demo"></p>
+          
+
+                </div>  
+
+                
+            
+            </main>
+        
+        </div>
+       
+    </body>
+    <script src="./assets/js/script.js"></script>
+</html>
