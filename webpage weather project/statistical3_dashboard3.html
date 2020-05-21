@@ -3,9 +3,7 @@
     <style>
          body {
 		  background-color: #333333;
-       /*   background: url("./assets/img/sg1.jpg") no-repeat center center fixed; 
-	   background: url("./assets/img/weather.jpg") no-repeat center center fixed;*/
-
+       /*   background: url("./assets/img/sg1.jpg") no-repeat center center fixed; */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -17,9 +15,7 @@
           position: left ;
           background: rgb(0, 0, 0); /* Fallback color */
           background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-
-          color: #333333;
-
+          color: #f1f1f1;
           width: 47%;
           padding: 20px;
         }
@@ -29,11 +25,9 @@
     display: inline-block;
 
 }
-
 .inline-block {
    display: inline-block;
 }
-
 .brightness img:hover {
     opacity: .5;
 }.brightness {
@@ -85,7 +79,6 @@
 .div3 {
   width: 1200px;
   height: 10%;  
-
   margin-top:75px;
   border: 1px solid  rgba(0, 0, 0, 0.0);
   box-sizing: border-box;
@@ -148,12 +141,14 @@
 }
 
 .column {
+
  display: inline-block;
   float: left;
  /* width: 50%;
   padding: 5px; */
   width: 30%;
   height: 333.125px;
+  
 }
 
 /* Clearfix (clear floats) */
@@ -211,7 +206,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Analysing Weather Pattern System">
         <title>Analysing Weather Pattern System</title>
-
 		<script>
 		function openCity(evt, cityName) {
   // Declare all variables
@@ -258,144 +252,9 @@
 
 
             <main class="main">
-              <div class="div2">
-                <h1 style="color: white";>Statistics Page</h1>
-               
-                <hr align="left" width="87%">
-                <div class="div4">
-  
-                 <div class="tab">
-				  <button class="tablinks" onclick="openCity(event, 'London')">Trendings</button>
-				  <button class="tablinks" onclick="openCity(event, 'Paris')">Global Warming</button>
-				  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Air Quality Index</button>
-				</div>
-				
-				<div id="London" class="tabcontent">
-				  </br>
-				  <div class="row">
-				  <div class="column">
-				  <a href="statistical_dashboard1.html">
-					<img src="./assets/img/Country Dashboard.png"style="width:80%">
-					</a>
-				  </div>
-				  <div class="column">
-				  <a href="statistical_dashboard2.html">
-					<img src="./assets/img/Dashboard 1.png" alt="Forest" style="width: 80%;height: 406.531px;">
-					</a>
-				  </div>
-				  <div class="column">
-				  <a href="statistical_dashboard3.html">
-					<img src="./assets/img/Stock Market.png" alt="Mountains" style="width: 80%;height: 406.531px;">
-					</a>
-				  </div>
-				  
-					</div>
-					</div>
-				</div>
-
-				<div id="Paris" class="tabcontent">
-				  </br>
-				  <div class="row">
-				  <div class="column">
-				  <a href="statistical2_dashboard1.html">
-					<img src="./assets/img/Global warming.png"style="width:80%;height: 406.531px;">
-					</a>
-				  </div>
-				  <div class="column">
-				  <a href="statistical2_dashboard2.html">
-					<img src="./assets/img/Carbon Emissions Dashboard.png" alt="Forest" style="width: 80%;height: 406.531px;">
-					</a>
-				  </div>
-				  <div class="column">
-				  <a href="statistical2_dashboard3.html">
-					<img src="./assets/img/Story 1.png" alt="Mountains" style="width: 80%;height: 406.531px;">
-					</a>
-				  </div>
-				  
-					</div>
-				</div>
-
-				<div id="Tokyo" class="tabcontent">
-				 </br>
-				  <div class="row">
-				  <div class="column">
-				  <a href="statistical3_dashboard1.html">
-					<img src="./assets/img/Air Pollution in Leeds.png"style="width:80%;height: 406.531px;">
-					</a>
-				  </div>
-				  <div class="column">
-				  <a href="statistical3_dashboard2.html">
-					<img src="./assets/img/Air Pollution Trend in Milan.png" alt="Forest" style="width: 80%;height: 406.531px;">
-					</a>
-				  </div>
-				  <div class="column">
-				  <a href="statistical3_dashboard3.html">
-					<img src="./assets/img/Tableau de bord 1.png" alt="Mountains" style="width: 80%;height: 406.531px;">
-					</a>
-				  </div>
-				  
-					</div>
-                    </div>
-
-                    <div id="myDIV2" style="display:none">
-
-                      <div class="row">
-                        <div class="column">
-                          <img  src="./assets/img/ap3.JPG" alt="Css CastShow"/>
-                        </div>
-                        <div class="column">
-                          <img  src="./assets/img/ap1.JPG" alt="Css CastShow"/>
-                          
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="column">
-                          <img  src="./assets/img/ap2.JPG" alt="Css CastShow"/>
-                          
-                        </div>
-                        </div>
-                      
-                    </div>
-
-                    <div id="myDIV3" style="display:none">
-                      <div class="row">
-                        <div class="column">
-                          <img  src="./assets/img/gw1.JPG" alt="Css CastShow"/>
-                        </div>
-                        <div class="column">
-                          <img  src="./assets/img/gw2.JPG" alt="Css CastShow"/>
-                          
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <div class="column">
-                          <img  src="./assets/img/gw3.JPG" alt="Css CastShow"/>
-                          
-                        </div>
-                        <div class="column">
-                          <img  src="./assets/img/gw4.JPG" alt="Css CastShow"/>
-                        </div>
-                      </div>
-                    
-                    
-                    
-                      </div>
-                 
-                     
-                   
-                   
-                </div>
-
-                   
-          
-          
-
-                </div>  
-
-                
-            
+			<p><a href="statistical.html" style="
+				position: relative;">Go back</a></p>
+				<div class='tableauPlaceholder' id='viz1590001778475' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Em&#47;Emissions_15733987555610&#47;Tableaudebord1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Emissions_15733987555610&#47;Tableaudebord1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Em&#47;Emissions_15733987555610&#47;Tableaudebord1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590001778475');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='3377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
             </main>
         
         </div>
